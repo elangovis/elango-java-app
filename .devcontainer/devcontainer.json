@@ -1,0 +1,16 @@
+{
+  "name": "Java Dev Container",
+  "dockerFile": "Dockerfile",
+  "context": "..",
+  "settings": {
+    "java.home": "/usr/local/openjdk-11",
+    "java.configuration.updateBuildConfiguration": "automatic"
+  },
+  "extensions": [
+    "vscjava.vscode-java-pack",
+    "vscjava.vscode-gradle"
+  ],
+  "forwardPorts": [],
+  "postCreateCommand": "gradle --no-daemon build",
+  "remoteUser": "root"
+}

@@ -1,0 +1,22 @@
+plugins {
+    id 'application'
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'org.slf4j:slf4j-api:1.7.30'
+    testImplementation 'junit:junit:4.13.2'
+}
+
+application {
+    // Specify the main class
+    mainClass = 'App'
+}
+
+// Disable jar task
+tasks.named('jar') {
+    enabled = false
+}
